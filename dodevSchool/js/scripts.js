@@ -3,16 +3,32 @@
 ////////////////////////////////////////////////////////////////////////
 
 class Aluno {
-  
+    nome
+    idade
+    nota
+    constructor(nome,idade,nota){
+      this.nome = nome
+      this.idade = idade
+      this.nota = nota
+    }
 }
 
 // Array
+let alunosCadastrados = []
 
 
 //funções projeto
 
-function CadastrarAluno() {
-  
+function CadastrarAluno(nome,idade,nota) {
+   let = nome = prompt('Informe o seu nome:')
+   let = idade = parseInt(prompt('Informe a sua idade:'))
+   let = nota = parseFloat('Informe sua nota:')
+   let aluno = new Aluno(nome,idade,nota)
+   alunosCadastrados.push(aluno)
+   return Aluno 
+   
+
+
 }
 
 function OrdenarPorNota() {
