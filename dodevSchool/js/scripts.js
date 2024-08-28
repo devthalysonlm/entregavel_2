@@ -25,9 +25,8 @@ function CadastrarAluno(nome,idade,nota) {
    let = nota = parseFloat('Informe sua nota:')
    let aluno = new Aluno(nome,idade,nota)
    alunosCadastrados.push(aluno)
-   return Aluno 
+   return aluno 
    
-
 
 }
 
