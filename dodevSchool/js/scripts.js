@@ -18,7 +18,7 @@ let arrayAlunos = []
 
 //funções projeto
 
-function cadastrarAluno(nome,idade,nota,array){
+function CadastrarAluno(nome,idade,nota,array){
   let objetoAluno = new Aluno(nome,idade,nota)
   if(!array.some(x => x.Nome == nome))
     array.push(objetoAluno)
