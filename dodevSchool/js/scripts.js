@@ -2,32 +2,27 @@
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
 
-class Aluno {
-    nome
-    idade
-    nota
-    constructor(nome,idade,nota){
-      this.nome = nome
-      this.idade = idade
-      this.nota = nota
-    }
+class Aluno{
+  Nome
+  Idade
+  Nota
+  constructor(nome,idade,nota){
+    this.Nome = nome
+    this.Idade = idade
+    this.Nota = nota
+  }
 }
 
 // Array
-let alunosCadastrados = []
-
+let arrayAlunos = []
 
 //funções projeto
 
-function CadastrarAluno(nome,idade,nota) {
-   let = nome = prompt('Informe o seu nome:')
-   let = idade = parseInt(prompt('Informe a sua idade:'))
-   let = nota = parseFloat('Informe sua nota:')
-   let aluno = new Aluno(nome,idade,nota)
-   alunosCadastrados.push(aluno)
-   return aluno 
-   
-
+function cadastrarAluno(nome,idade,nota,array){
+  let objetoAluno = new Aluno(nome,idade,nota)
+  if(!array.some(x => x.Nome == nome))
+    array.push(objetoAluno)
+  return objetoAluno
 }
 
 function OrdenarPorNota() {
