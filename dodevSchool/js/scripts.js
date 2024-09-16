@@ -25,19 +25,44 @@ function cadastrarAluno(nome,idade,nota,array){
   return objetoAluno
 }
 
-function OrdenarPorNota() {
- 
+function OrdenarPorNota(array) {
+  array.sort((a, b) => a.Nota - b.Nota)
+  return array
 }
 
 function OrdenarPorIdade() {
-
+  array.sort((a, b) => b.Idade - a.Idade)
+  return array
 }
 
-function OrdenarPorNome() {
+function OrdenarPorNome(array) {
+  array.sort((a, b) => {
+    const nomeA = a.Nome.toUpperCase();
+    const nomeB = b.Nome.toUpperCase();
 
+    if (nomeA < nomeB){
+      return -1;
+    }
+    if (nomeA > nomeB){
+      return 1;
+    }
+    return 0;
+  });
+  return array
 }
 
-function CalcularMedia(){
+function CalcularMedia(array){
+  if(array.length === 0) {
+    return 0;
+  }
+  let somaNotas = 0;
+
+  array.forEach((aluno) => {
+    somaNotas += Number(aluno.nota)
+  })
+
+  const media = somaNotas / array.length;
+  return media;
 
 }
 
