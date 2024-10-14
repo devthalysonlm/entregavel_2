@@ -1,71 +1,33 @@
 ////////////////////////////////////////////////////////////////////////
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
-
 class Aluno{
-  Nome
-  Idade
-  Nota
+  nome
+  idade
+  nota
   constructor(nome,idade,nota){
     this.Nome = nome
     this.Idade = idade
     this.Nota = nota
+    
   }
 }
 
-// Array
-let arrayAlunos = []
+let arrayAlunos = [];
 
-//funções projeto
-
+//Função para cadastrar alunos
 function CadastrarAluno(nome,idade,nota,array){
-  let objetoAluno = new Aluno(nome,idade,nota)
-  if(!array.some(x => x.Nome == nome))
+  //Cria um  novo objeto de aluno
+  let objetoAluno = new Aluno(nome,idade.nota);
+  //Verifica se o aluno ja existe no array pelo nome
+  if (!array.some(x => x.Nome === nome)){
     array.push(objetoAluno)
-  return objetoAluno
-}
-
-function OrdenarPorNota(array) {
-  array.sort((a, b) => a.Nota - b.Nota)
-  return array
-}
-
-function OrdenarPorIdade() {
-  array.sort((a, b) => b.Idade - a.Idade)
-  return array
-}
-
-function OrdenarPorNome(array) {
-  array.sort((a, b) => {
-    const nomeA = a.Nome.toUpperCase();
-    const nomeB = b.Nome.toUpperCase();
-
-    if (nomeA < nomeB){
-      return -1;
-    }
-    if (nomeA > nomeB){
-      return 1;
-    }
-    return 0;
-  });
-  return array
-}
-
-function CalcularMedia(array){
-  if(array.length === 0) {
-    return 0;
   }
-  let somaNotas = 0;
 
-  array.forEach((aluno) => {
-    somaNotas += Number(aluno.nota)
-  })
+  return objetoAluno;
 
-  const media = somaNotas / array.length;
-  return media;
 
 }
-
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
