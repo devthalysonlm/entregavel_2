@@ -1,33 +1,31 @@
 ////////////////////////////////////////////////////////////////////////
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
-class Aluno{
-  nome
-  idade
-  nota
-  constructor(nome,idade,nota){
+class Aluno {
+  Nome
+  Idade
+  Nota
+  constructor(nome, idade, nota){
     this.Nome = nome
     this.Idade = idade
     this.Nota = nota
-    
   }
 }
 
 let arrayAlunos = [];
 
-//Função para cadastrar alunos
-function CadastrarAluno(nome,idade,nota,array){
-  //Cria um  novo objeto de aluno
-  let objetoAluno = new Aluno(nome,idade.nota);
-  //Verifica se o aluno ja existe no array pelo nome
-  if (!array.some(x => x.Nome === nome)){
+function CadastrarAluno(nome, idade, nota, array){
+  let objetoAluno = new Aluno(nome, idade, nota)
+  if(!array.sort(x => x.Nome === nome)){
     array.push(objetoAluno)
   }
-
   return objetoAluno;
-
-
 }
+
+
+ 
+
+
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
