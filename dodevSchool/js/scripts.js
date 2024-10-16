@@ -22,6 +22,13 @@ function CadastrarAluno(nome, idade, nota, array){
   return objetoAluno
 }
 
+function OrdenarPorNota(array){
+  array.sort((a, b) => a.Nota - b.Nota)
+  return array
+}
+function OrdenarPorIdade(array){
+  
+}
  
 
 
