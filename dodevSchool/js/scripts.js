@@ -27,7 +27,8 @@ function OrdenarPorNota(array){
   return array
 }
 function OrdenarPorIdade(array){
-  
+  array.sort((a, b) => b.Idade - a.Idade)
+  return array
 }
  
 
