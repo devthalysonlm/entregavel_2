@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
-class Aluno{
+class Aluno {
   Nome
   Idade
   Nota
@@ -26,10 +26,13 @@ function OrdenarPorNota(array){
   array.sort((a, b) => a.Nota - b.Nota)
   return array
 }
+
 function OrdenarPorIdade(array){
   array.sort((a, b) => b.Idade - a.Idade)
   return array
 }
+
+
  
 
 
