@@ -48,6 +48,22 @@ function OrdenarPorNome(array){
   return array
 }
 
+function CalcularMedia(array){
+  if(array.length === 0){
+    return 0
+  }
+
+  let somaNotas = 0
+
+  array.forEach((aluno) => {
+    somaNotas += Number(aluno.Nota)
+  })
+
+  let media = somaNotas / array.length
+  return media
+
+}
+
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
