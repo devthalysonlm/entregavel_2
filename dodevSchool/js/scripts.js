@@ -19,7 +19,7 @@ function CadastrarAluno(nome, idade, nota, array){
   if(!array.some(x => x.Nome === nome)){
     array.push(objetoAluno)
   }
-  return objetoAluno
+  return objetoAluno  
 }
 
 function OrdenarPorNota(array){
