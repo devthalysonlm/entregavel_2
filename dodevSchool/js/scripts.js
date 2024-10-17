@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////////////////////////
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
+
 class Aluno{
   Nome
   Idade
@@ -12,14 +13,14 @@ class Aluno{
   }
 }
 
-let arrayAlunos = [];
+let arrayAlunos = []
 
 function CadastrarAluno(nome, idade, nota, array){
   let objetoAluno = new Aluno(nome, idade, nota)
   if(!array.some(x => x.Nome === nome)){
     array.push(objetoAluno)
   }
-  return objetoAluno  
+  return objetoAluno
 }
 
 function OrdenarPorNota(array){
@@ -53,16 +54,17 @@ function CalcularMedia(array){
     return 0
   }
 
-  let somaNotas = 0
+  somaNotas = 0
 
   array.forEach((aluno) => {
     somaNotas += Number(aluno.Nota)
   })
 
-  let media = somaNotas / array.length
+  const media = somaNotas / array.length
   return media
-
 }
+  
+
 
 
 ////////////////////////////////////////////////////////////////////////
