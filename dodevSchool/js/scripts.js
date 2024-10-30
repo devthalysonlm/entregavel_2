@@ -49,7 +49,7 @@ function OrdenarPorNome(array){
   return array
 }
 
-function OrdenarPorMedia(array){
+function CalcularMedia(array){
   if(array.length === 0){
     return 0
   }
@@ -57,7 +57,7 @@ function OrdenarPorMedia(array){
   somaNotas = 0
 
   array.forEach((aluno) =>{
-    somaNotas += Number(nota)
+    somaNotas += Number(aluno.Nota)
   })
 
   const media = somaNotas / array.length
